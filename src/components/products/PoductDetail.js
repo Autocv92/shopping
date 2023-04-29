@@ -6,7 +6,7 @@ function PoductDetail() {
   const { productId } = useParams();
   const [productDetail, setProductDetail] = useState({});
   const navigate = useNavigate();
-
+  // fetch user data
   useEffect(() => {
     axios
       .get(`http://localhost:3004/products/${productId}`)
