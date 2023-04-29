@@ -16,6 +16,7 @@ function PoductDetail() {
       .catch((error) => console.log(error));
   }, [productId]);
 
+  // delete the product
   const handleDelete = (id) => {
     axios.delete(`http://localhost:3004/products/${id}`).then((response) => {
       if (response.status === 200) {
